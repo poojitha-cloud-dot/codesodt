@@ -1,0 +1,6 @@
+.calculator{width:280px;margin:60px auto;background:#fff3f0;padding:20px;border-radius:12px;box-shadow:0 6px 20px rgba(0,0,0,0.15);}
+#display{width:100%;height:50px;margin-bottom:15px;font-size:20px;padding:8px;border-radius:8px;border:1px solid #ccc;text-align:right;}
+.buttons{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;}
+button{padding:15px;font-size:18px;border:none;border-radius:6px;background:#ee0979;color:#fff;cursor:pointer;transition:0.2s;}
+button:hover{background:#ff6a00;}
+#clear{grid-column:span 4;background:#d6336c;}
