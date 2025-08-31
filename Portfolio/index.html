@@ -1,0 +1,149 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Poojitha — Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="nav-wrap">
+    <nav class="nav container">
+      <div class="brand">Poojitha</div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="toggle menu" onclick="document.getElementById('navLinks').classList.toggle('open')">☰</button>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section id="home" class="hero">
+      <div class="hero-inner container">
+        <div class="hero-text">
+          <h1>Hi, I'm <span class="accent">Poojitha</span>.</h1>
+          <p class="lead">3rd-year CSE student • Web Developer • UI/UX Enthusiast</p>
+          <p class="cta-row">
+            <a class="btn primary" href="#contact">Hire Me</a>
+            <a class="btn outline" href="#projects">View Projects</a>
+          </p>
+        </div>
+        <div class="hero-avatar">
+          <div class="avatar-ring" aria-hidden="true">
+            <img src="assets/avatar.png" alt="Avatar of Poojitha" class="avatar">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about container">
+      <div class="about-grid">
+        <div class="about-card">
+          <h2>About Me</h2>
+          <p>I am a 3rd-year Computer Science student at Bapuji Institute of Engineering and Technology (BIET), Davangere. I build responsive websites and focus on clean UI/UX. I enjoy learning new technologies and solving real problems through code.</p>
+          <ul class="meta">
+            <li><strong>Degree:</strong> B.E. Computer Science (3rd year)</li>
+            <li><strong>Location:</strong> Davangere, India</li>
+            <li><strong>Availability:</strong> Open to internships</li>
+          </ul>
+        </div>
+        <div class="profile-card">
+          <div class="avatar-large">
+            <img src="assets/avatar.png" alt="Avatar">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="container">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
+        <div class="skill"><div class="icon">💻</div><h4>HTML & CSS</h4></div>
+        <div class="skill"><div class="icon">⚡</div><h4>JavaScript (ES6+)</h4></div>
+        <div class="skill"><div class="icon">⚛️</div><h4>React (Basics)</h4></div>
+        <div class="skill"><div class="icon">🐍</div><h4>Python</h4></div>
+        <div class="skill"><div class="icon">🗄️</div><h4>MySQL / PHP</h4></div>
+        <div class="skill"><div class="icon">🎨</div><h4>UI/UX Design</h4></div>
+      </div>
+    </section>
+
+    <section id="projects" class="container">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid">
+        <article class="proj-card">
+          <img src="assets/proj1.svg" alt="Event Management">
+          <div class="proj-content">
+            <h3>Event Management System</h3>
+            <p>College club event manager — PHP & MySQL backend, multi-role (admin/club/user).</p>
+            <p class="proj-actions"><a class="btn outline" href="#">View Code</a> <a class="btn" href="#">Live Demo</a></p>
+          </div>
+        </article>
+        <article class="proj-card">
+          <img src="assets/proj2.svg" alt="Meditation App">
+          <div class="proj-content">
+            <h3>Meditation App (UI/UX)</h3>
+            <p>Design-focused meditation app with calming UI, prototypes for assignment.</p>
+            <p class="proj-actions"><a class="btn outline" href="#">View Design</a> <a class="btn" href="#">Prototype</a></p>
+          </div>
+        </article>
+        <article class="proj-card">
+          <img src="assets/proj3.svg" alt="Portfolio">
+          <div class="proj-content">
+            <h3>Portfolio Website</h3>
+            <p>Responsive personal portfolio built with vanilla HTML, CSS and minimal JS.</p>
+            <p class="proj-actions"><a class="btn outline" href="#">Source</a> <a class="btn" href="#">Live</a></p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="resume" class="container resume-section">
+      <h2 class="section-title">Resume</h2>
+      <p><a class="btn primary" href="#" onclick="alert('Resume not uploaded yet'); return false;">Download Resume (Coming Soon)</a></p>
+    </section>
+
+    <section id="contact" class="container contact-section">
+      <h2 class="section-title">Contact</h2>
+      <div class="contact-grid">
+        <form class="contact-form" onsubmit="alert('Demo form — not functional'); return false;">
+          <label>Name<input type="text" required></label>
+          <label>Email<input type="email" required></label>
+          <label>Message<textarea required></textarea></label>
+          <p><button class="btn primary" type="submit">Send Message</button></p>
+        </form>
+        <div class="contact-info">
+          <h3>Get in touch</h3>
+          <p>Email: <a href="mailto:poojitha@example.com">poojitha@example.com</a></p>
+          <p>Phone: +91-9876543210</p>
+          <p>GitHub: <a href="https://github.com/poojitha-cloud-dot" target="_blank">poojitha-cloud-dot</a></p>
+          <p>LinkedIn: <a href="https://www.linkedin.com" target="_blank">linkedin.com/in/poojitha</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Poojitha • Built for CodSoft Internship</p>
+    </div>
+  </footer>
+
+  <script>
+    // Smooth scroll for internal links
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', function(e){
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if(target) target.scrollIntoView({behavior:'smooth', block:'start'});
+      });
+    });
+  </script>
+</body>
+</html>
